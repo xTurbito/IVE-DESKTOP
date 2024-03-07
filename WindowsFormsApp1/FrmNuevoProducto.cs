@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void LoadData()
         {
-            ProductoDB oProductoDb = new ProductoDB();
+            ProductoBD oProductoDb = new ProductoBD();
             Productos oProducto = oProductoDb.Get((int)IDProducto);
             txtNombre.Text = oProducto.Nombre;
             txtDescripcion.Text = oProducto.Descripcion;
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
 
         private void btGuardar_Click(object sender, EventArgs e)
         {
-            ProductoDB oProductoDB = new ProductoDB();  
+            ProductoBD oProductoDB = new ProductoBD();  
             try
             {
                 if (IDProducto == null)

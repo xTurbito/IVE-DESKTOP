@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
            
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
+        /*private void btnUsuarios_Click(object sender, EventArgs e)
         {
             FrmUsuarios frmUsuarios = new FrmUsuarios();    
             frmUsuarios.ShowDialog();
@@ -42,6 +42,6 @@ namespace WindowsFormsApp1
         {
            FrmProveedores frmProveedores = new FrmProveedores();    
             frmProveedores.ShowDialog();
-        }
+        } */
     }
 }

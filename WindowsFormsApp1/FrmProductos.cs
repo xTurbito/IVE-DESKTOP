@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
         private void Refresh()
         {
-            ProductoDB oProductoDB = new ProductoDB();
+            ProductoBD oProductoDB = new ProductoBD();
             dtProductos.DataSource = oProductoDB.Get();
         }
 
@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
             
             if (ID != null)
             {
-                ProductoDB oProductoDB = new ProductoDB();
+                ProductoBD oProductoDB = new ProductoBD();
                 oProductoDB.Delete((int)ID);
                 Refresh();
             }

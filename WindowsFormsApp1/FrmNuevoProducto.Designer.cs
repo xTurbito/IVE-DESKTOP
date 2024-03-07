@@ -42,6 +42,8 @@
             this.btGuardar = new FontAwesome.Sharp.IconButton();
             this.pbfotoProducto = new System.Windows.Forms.PictureBox();
             this.btnSubirFoto = new FontAwesome.Sharp.IconButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbfotoProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +86,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(162, 155);
+            this.txtPrecio.Location = new System.Drawing.Point(162, 201);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(229, 26);
             this.txtPrecio.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             this.lbPrecio.AutoSize = true;
             this.lbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrecio.Location = new System.Drawing.Point(24, 163);
+            this.lbPrecio.Location = new System.Drawing.Point(24, 209);
             this.lbPrecio.Name = "lbPrecio";
             this.lbPrecio.Size = new System.Drawing.Size(53, 20);
             this.lbPrecio.TabIndex = 4;
@@ -102,7 +104,7 @@
             // txtStock
             // 
             this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStock.Location = new System.Drawing.Point(162, 207);
+            this.txtStock.Location = new System.Drawing.Point(162, 253);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(229, 26);
             this.txtStock.TabIndex = 7;
@@ -111,7 +113,7 @@
             // 
             this.lbStock.AutoSize = true;
             this.lbStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStock.Location = new System.Drawing.Point(24, 207);
+            this.lbStock.Location = new System.Drawing.Point(24, 253);
             this.lbStock.Name = "lbStock";
             this.lbStock.Size = new System.Drawing.Size(50, 20);
             this.lbStock.TabIndex = 6;
@@ -120,7 +122,7 @@
             // txtActivo
             // 
             this.txtActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActivo.Location = new System.Drawing.Point(162, 253);
+            this.txtActivo.Location = new System.Drawing.Point(162, 299);
             this.txtActivo.Name = "txtActivo";
             this.txtActivo.Size = new System.Drawing.Size(229, 26);
             this.txtActivo.TabIndex = 9;
@@ -129,7 +131,7 @@
             // 
             this.lbActivo.AutoSize = true;
             this.lbActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbActivo.Location = new System.Drawing.Point(24, 253);
+            this.lbActivo.Location = new System.Drawing.Point(24, 299);
             this.lbActivo.Name = "lbActivo";
             this.lbActivo.Size = new System.Drawing.Size(52, 20);
             this.lbActivo.TabIndex = 8;
@@ -150,7 +152,7 @@
             this.btGuardar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btGuardar.IconColor = System.Drawing.Color.Black;
             this.btGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btGuardar.Location = new System.Drawing.Point(193, 312);
+            this.btGuardar.Location = new System.Drawing.Point(193, 351);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(125, 23);
             this.btGuardar.TabIndex = 11;
@@ -180,11 +182,31 @@
             this.btnSubirFoto.UseVisualStyleBackColor = true;
             this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(162, 157);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(229, 26);
+            this.textBox1.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(24, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Precio";
+            // 
             // FrmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 353);
+            this.ClientSize = new System.Drawing.Size(698, 392);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSubirFoto);
             this.Controls.Add(this.pbfotoProducto);
             this.Controls.Add(this.btGuardar);
@@ -224,5 +246,7 @@
         private FontAwesome.Sharp.IconButton btGuardar;
         private System.Windows.Forms.PictureBox pbfotoProducto;
         private FontAwesome.Sharp.IconButton btnSubirFoto;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
