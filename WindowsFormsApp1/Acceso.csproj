@@ -105,11 +105,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmNuevoProducto.cs">
+    <Compile Include="FrmInfoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNuevoProducto.Designer.cs">
-      <DependentUpon>FrmNuevoProducto.cs</DependentUpon>
+    <Compile Include="FrmInfoUsuario.Designer.cs">
+      <DependentUpon>FrmInfoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoProducto.Designer.cs">
+      <DependentUpon>FrmInfoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmProductos.cs">
       <SubType>Form</SubType>
@@ -129,21 +135,33 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductoBD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuariosBD.cs" />
+    <EmbeddedResource Include="FrmInfoUsuario.resx">
+      <DependentUpon>FrmInfoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNuevoProducto.resx">
-      <DependentUpon>FrmNuevoProducto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmInfoProducto.resx">
+      <DependentUpon>FrmInfoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

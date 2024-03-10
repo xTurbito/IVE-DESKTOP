@@ -32,16 +32,11 @@ namespace WindowsFormsApp1
            
         }
 
-        /*private void btnUsuarios_Click(object sender, EventArgs e)
+       
+        private void btnUsuarios_Click_1(object sender, EventArgs e)
         {
-            FrmUsuarios frmUsuarios = new FrmUsuarios();    
+            FrmUsuarios frmUsuarios = new FrmUsuarios();
             frmUsuarios.ShowDialog();
         }
-
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-           FrmProveedores frmProveedores = new FrmProveedores();    
-            frmProveedores.ShowDialog();
-        } */
     }
 }

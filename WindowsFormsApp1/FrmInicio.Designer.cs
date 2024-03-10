@@ -59,7 +59,7 @@
             this.btnUsuarios.TabIndex = 2;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
-           // this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click_1);
             // 
             // btnProductos
             // 
@@ -85,7 +85,6 @@
             this.btnProveedores.TabIndex = 1;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
-        //    this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // FrmInicio
             // 

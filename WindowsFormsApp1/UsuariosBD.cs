@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
 
         public Usuarios Get(int idUsuario)
         {
-            string query = "SELECT idusuario, nombre, password, tipo_usuclave, lactivo FROM usuarios WHERE idusuario = @id";
+            string query = "SELECT idusuario,usuario, nombre, password, tipo_usuclave, lactivo FROM usuarios WHERE idusuario = @id";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -79,18 +79,20 @@ namespace WindowsFormsApp1
                     conexion.Open();
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
-                        if (reader.Read())
+                       if(reader.Read())
                         {
-                            Usuarios oUsuarios = new Usuarios();
-                            oUsuarios.idusuario = reader.GetInt32(0);
-                            oUsuarios.usuario = reader.GetString(1);
-                            oUsuarios.nombre = reader.GetString(2);
-                            oUsuarios.password = reader.GetString(3);
-                            oUsuarios.tipo_usuclave = reader.GetInt32(4);
-                            oUsuarios.lactivo = reader.GetInt32(5);
-
+                            Usuarios oUsuarios = new Usuarios
+                            {
+                                idusuario = reader.GetInt32(0),
+                                usuario = reader.GetString(1),
+                                password = reader.GetString(2),
+                                nombre = reader.GetString(3),
+                                tipo_usuclave = reader.GetInt32(4),
+                                lactivo = reader.GetInt32(5)    
+                            };
                             return oUsuarios;
                         }
+
                     }
 
                     return null; // Si no se encuentra ningún usuario con ese id.

@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using MySql.Data.MySqlClient;
+using System.Drawing;
+using System.Drawing.Imaging;
 using static WindowsFormsApp1.UsuariosBD;
 
 
@@ -57,6 +59,7 @@ namespace WindowsFormsApp1
                         oProductos.Nombre = reader.GetString(1);    
                         oProductos.Descripcion = reader.GetString(2);
                         oProductos.Precio = reader.GetDecimal(3);
+                        oProductos.precio_cost = reader.GetDecimal(9);  
                         oProductos.Stock = reader.GetInt32(4);
                         oProductos.lActivo = reader.GetInt32(5);
                         productos.Add(oProductos);
@@ -76,7 +79,7 @@ namespace WindowsFormsApp1
 
         public Productos Get(int IDProducto)
         {
-            string query = "SELECT IDProducto, Nombre, Descripcion, Precio, Stock, lActivo, fotoproducto FROM productos WHERE IDProducto = @id";
+            string query = "SELECT IDProducto, Nombre, Descripcion,Precio,Stock, lActivo, fotoproducto, precio_cost FROM productos WHERE IDProducto = @id";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -97,8 +100,10 @@ namespace WindowsFormsApp1
                                 Nombre = reader.GetString(1),
                                 Descripcion = reader.GetString(2),
                                 Precio = reader.GetDecimal(3),
+                                precio_cost = reader.GetDecimal(7),
                                 Stock = reader.GetInt32(4),
-                                lActivo = reader.GetInt32(5)
+                                lActivo = reader.GetInt32(5),
+                                
                             };
 
                           
@@ -140,10 +145,10 @@ namespace WindowsFormsApp1
         }
 
 
-        public void Add(string Nombre, string Descripcion, string Precio, int Stock, int lActivo, string fotoproducto)
+        public void Add(string Nombre, string Descripcion, decimal Precio, int Stock, int lActivo, string fotoproducto, decimal precio_cost)
         {
-            string query = "INSERT into productos(Nombre, Descripcion, Precio, Stock, lActivo, fotoproducto) values" +
-                           "(@nombre, @descripcion, @precio, @stock, @lactivo, @fotoproducto)";
+            string query = "INSERT into productos(Nombre, Descripcion, Precio,precio_cost, Stock, lActivo, fotoproducto) values" +
+                           "(@nombre, @descripcion, @precio, @stock, @lactivo, @fotoproducto,@precio_cost)";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             {
@@ -153,6 +158,7 @@ namespace WindowsFormsApp1
                 command.Parameters.AddWithValue("@precio", Precio);
                 command.Parameters.AddWithValue("@stock", Stock);
                 command.Parameters.AddWithValue("@lactivo", lActivo);
+                command.Parameters.AddWithValue("@precio_cost", precio_cost);
 
                 byte[] fotoproductoBytes = Convert.FromBase64String(fotoproducto);
 
@@ -182,19 +188,19 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void Update(string Nombre, string Descripcion, string Precio, int Stock, int lActivo, string fotoproducto, int IDProducto)
+        public void Update(string Nombre, string Descripcion, decimal Precio, int Stock, int lActivo, string fotoproducto, int IDProducto, decimal precio_cost)
         {
             string query;
             if (!string.IsNullOrEmpty(fotoproducto))
             {
                 // Agregar el encabezado si se proporciona una imagen
                 fotoproducto = "data:image/jpeg;base64," + fotoproducto;
-                query = "UPDATE productos SET Nombre = @nombre, Descripcion = @descripcion, Precio = @precio, Stock = @stock, lActivo = @lactivo, fotoproducto = @fotoproducto WHERE IDProducto = @id";
+                query = "UPDATE productos SET Nombre = @nombre, Descripcion = @descripcion, Precio = @precio, Stock = @stock, lActivo = @lactivo, fotoproducto = @fotoproducto, precio_cost = @precio_cost WHERE IDProducto = @id";
             }
             else
             {
                 // No incluir el campo fotoproducto si no se proporciona una imagen
-                query = "UPDATE productos SET Nombre = @nombre, Descripcion = @descripcion, Precio = @precio, Stock = @stock, lActivo = @lactivo WHERE IDProducto = @id";
+                query = "UPDATE productos SET Nombre = @nombre, Descripcion = @descripcion, Precio = @precio, Stock = @stock,precio_cost = @precio_cost, lActivo = @lactivo WHERE IDProducto = @id";
             }
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
@@ -205,6 +211,7 @@ namespace WindowsFormsApp1
                 command.Parameters.AddWithValue("@precio", Precio);
                 command.Parameters.AddWithValue("@stock", Stock);
                 command.Parameters.AddWithValue("@lactivo", lActivo);
+                command.Parameters.AddWithValue("@precio_cost", precio_cost);
                 // Solo se agrega el parámetro si se proporciona una imagen
                 if (!string.IsNullOrEmpty(fotoproducto))
                 {
@@ -256,6 +263,7 @@ namespace WindowsFormsApp1
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public decimal Precio { get; set; }
+        public decimal precio_cost {  get; set; }
         public int Stock { get; set; }
         public int lActivo { get; set; }
 

@@ -22,19 +22,21 @@ namespace WindowsFormsApp1
           
         }
 
-       
-
-        private void FrmProductos_Load(object sender, EventArgs e)
-        {
-            Refresh();
-        }
-
         private void Refresh()
         {
             ProductoBD oProductoDB = new ProductoBD();
             dtProductos.DataSource = oProductoDB.Get();
+            dtProductos.Columns[0].Visible = false;
+            dtProductos.Columns[7].Visible = false;
         }
 
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
+            
+            Refresh();
+        }
+
+       
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             Refresh();
@@ -42,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void btnAgregarProducto_Click(object sender, EventArgs e)
         {
-            FrmNuevoProducto frm = new FrmNuevoProducto();
+            FrmInfoProducto frm = new FrmInfoProducto();
             frm.ShowDialog();
             Refresh();
         }
@@ -52,7 +54,7 @@ namespace WindowsFormsApp1
             int? ID = GetId();
             if (ID != null)
             {
-                FrmNuevoProducto frmEdit = new FrmNuevoProducto(ID);
+                FrmInfoProducto frmEdit = new FrmInfoProducto(ID);
                 frmEdit.ShowDialog();
                 Refresh();
             }
