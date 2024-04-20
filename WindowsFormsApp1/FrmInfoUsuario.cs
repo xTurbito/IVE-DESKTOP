@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
             txtUsuario.Text = oUsuario.usuario;
             txtPassword.Text = oUsuario.password;
             txtNombre.Text = oUsuario.nombre;
-            txtTipoUsuario.Text = oUsuario.tipo_usuclave.ToString();  
+            txtTipoUsuario.Text = oUsuario.idPerfil.ToString();  
            txtActivo.Text = oUsuario.lactivo.ToString();
         }
 

@@ -40,11 +40,8 @@
             this.lbActivo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btGuardar = new FontAwesome.Sharp.IconButton();
-            this.pbfotoProducto = new System.Windows.Forms.PictureBox();
-            this.btnSubirFoto = new FontAwesome.Sharp.IconButton();
             this.txtPrecio_cost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbfotoProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNombre
@@ -160,28 +157,6 @@
             this.btGuardar.UseVisualStyleBackColor = true;
             this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
-            // pbfotoProducto
-            // 
-            this.pbfotoProducto.Location = new System.Drawing.Point(447, 24);
-            this.pbfotoProducto.Name = "pbfotoProducto";
-            this.pbfotoProducto.Size = new System.Drawing.Size(204, 255);
-            this.pbfotoProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbfotoProducto.TabIndex = 28;
-            this.pbfotoProducto.TabStop = false;
-            // 
-            // btnSubirFoto
-            // 
-            this.btnSubirFoto.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnSubirFoto.IconColor = System.Drawing.Color.Black;
-            this.btnSubirFoto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSubirFoto.Location = new System.Drawing.Point(493, 298);
-            this.btnSubirFoto.Name = "btnSubirFoto";
-            this.btnSubirFoto.Size = new System.Drawing.Size(125, 23);
-            this.btnSubirFoto.TabIndex = 29;
-            this.btnSubirFoto.Text = "Subir Foto";
-            this.btnSubirFoto.UseVisualStyleBackColor = true;
-            this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
-            // 
             // txtPrecio_cost
             // 
             this.txtPrecio_cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,11 +179,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 392);
+            this.ClientSize = new System.Drawing.Size(442, 391);
             this.Controls.Add(this.txtPrecio_cost);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnSubirFoto);
-            this.Controls.Add(this.pbfotoProducto);
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtActivo);
@@ -224,7 +197,6 @@
             this.Name = "FrmInfoProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNuevoProducto1";
-            ((System.ComponentModel.ISupportInitialize)(this.pbfotoProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,8 +216,6 @@
         private System.Windows.Forms.Label lbActivo;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btGuardar;
-        private System.Windows.Forms.PictureBox pbfotoProducto;
-        private FontAwesome.Sharp.IconButton btnSubirFoto;
         private System.Windows.Forms.TextBox txtPrecio_cost;
         private System.Windows.Forms.Label label2;
     }

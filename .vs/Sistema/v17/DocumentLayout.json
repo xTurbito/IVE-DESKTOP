@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\IVE-DESKTOP\\",
+  "WorkspaceRootPath": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\ive-desktop\\windowsformsapp1\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\users\\migue\\documents\\proyectos\\sistemaventaswf\\windowsformsapp1\\frminfoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\frminfoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\ive-desktop\\windowsformsapp1\\frminfousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\users\\migue\\documents\\proyectos\\sistemaventaswf\\windowsformsapp1\\productobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\productobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\users\\migue\\documents\\proyectos\\sistemaventaswf\\windowsformsapp1\\frminfoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\frminfoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\users\\migue\\documents\\proyectos\\sistemaventaswf\\windowsformsapp1\\frminfousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\frminfousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|c:\\users\\migue\\documents\\proyectos\\sistemaventaswf\\windowsformsapp1\\frminfousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47EFB547-1D45-4CC2-887D-12AA4F5B5368}|WindowsFormsApp1\\Acceso.csproj|solutionrelative:windowsformsapp1\\frminfousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +38,86 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmUsuarios.cs [Design]",
-              "DocumentMoniker": "C:\\IVE-DESKTOP\\WindowsFormsApp1\\FrmUsuarios.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmUsuarios.cs",
-              "ToolTip": "C:\\IVE-DESKTOP\\WindowsFormsApp1\\FrmUsuarios.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\FrmUsuarios.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "ProductoBD.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\ProductoBD.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\ProductoBD.cs",
+              "ToolTip": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\ProductoBD.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\ProductoBD.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAKgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:46:36.512Z",
+              "WhenOpened": "2024-04-18T04:43:49.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmInfoProducto.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoProducto.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInfoProducto.cs",
+              "ToolTip": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoProducto.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInfoProducto.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T04:42:25.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmInfoProducto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoProducto.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInfoProducto.cs",
+              "ToolTip": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoProducto.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInfoProducto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T04:42:23.9Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmInfoUsuario.cs",
-              "DocumentMoniker": "C:\\IVE-DESKTOP\\WindowsFormsApp1\\FrmInfoUsuario.cs",
+              "DocumentIndex": 3,
+              "Title": "FrmInfoUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoUsuario.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInfoUsuario.cs",
-              "ToolTip": "C:\\IVE-DESKTOP\\WindowsFormsApp1\\FrmInfoUsuario.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\FrmInfoUsuario.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAADwvy0AAABOAAAA",
+              "ToolTip": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoUsuario.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInfoUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:37:24Z",
+              "WhenOpened": "2024-04-18T04:42:16.962Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b0db8185-e8ff-4fb6-a192-7f19d9e027cc",
+        "Display": 1,
+        "X": 386,
+        "Y": 334,
+        "Width": 1528,
+        "Height": 792,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmInfoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInfoUsuario.cs",
+              "ToolTip": "C:\\Users\\migue\\Documents\\Proyectos\\SistemaVentasWF\\WindowsFormsApp1\\FrmInfoUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInfoUsuario.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T04:42:19.18Z",
               "EditorCaption": ""
             }
           ]

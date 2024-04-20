@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
         {
             List<Usuarios> usuarios = new List<Usuarios>();
 
-            string query = "SELECT idusuario, usuario, password, nombre, tipo_usuclave, lactivo FROM usuarios";
+            string query = "SELECT idusuario, usuario, password, nombre, idPerfil, lactivo FROM usuarios";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
                             oUsuarios.usuario = reader.GetString(1);
                             oUsuarios.password = reader.GetString(2);
                             oUsuarios.nombre = reader.GetString(3);
-                            oUsuarios.tipo_usuclave = reader.GetInt32(4);
+                            oUsuarios.idPerfil = reader.GetInt32(4);
                             oUsuarios.lactivo = reader.GetInt32(5);
                             usuarios.Add(oUsuarios);
                         }
@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
 
         public Usuarios Get(int idUsuario)
         {
-            string query = "SELECT idusuario,usuario, nombre, password, tipo_usuclave, lactivo FROM usuarios WHERE idusuario = @id";
+            string query = "SELECT idusuario,usuario, nombre, password, idPerfil, lactivo FROM usuarios WHERE idusuario = @id";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
                                 usuario = reader.GetString(1),
                                 password = reader.GetString(2),
                                 nombre = reader.GetString(3),
-                                tipo_usuclave = reader.GetInt32(4),
+                                idPerfil = reader.GetInt32(4),
                                 lactivo = reader.GetInt32(5)    
                             };
                             return oUsuarios;
@@ -105,9 +105,9 @@ namespace WindowsFormsApp1
         }
 
 
-        public void Add(string usuario, string nombre, string password, int tipo_usuclave, int lactivo)
+        public void Add(string usuario, string nombre, string password, int idPerfil, int lactivo)
         {
-            string query = "INSERT INTO usuarios (usuario, nombre, password, tipo_usuclave, lactivo) VALUES (@usuario, @nombre, @password, @tipo_usuclave, @lactivo)";
+            string query = "INSERT INTO usuarios (usuario, nombre, password, idPerfil, lactivo) VALUES (@usuario, @nombre, @password, @idPerfil, @lactivo)";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
                 command.Parameters.AddWithValue("@usuario", usuario);
                 command.Parameters.AddWithValue("@nombre", nombre);
                 command.Parameters.AddWithValue("@password", password);
-                command.Parameters.AddWithValue("@tipo_usuclave", tipo_usuclave);
+                command.Parameters.AddWithValue("@idPerfil", idPerfil);
                 command.Parameters.AddWithValue("@lactivo", lactivo);
 
                 try
@@ -130,9 +130,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void Update(string usuario, string nombre, string password, int tipo_usuclave, int lactivo, int idUsuario)
+        public void Update(string usuario, string nombre, string password, int idPerfil, int lactivo, int idUsuario)
         {
-            string query = "UPDATE usuarios SET usuario = @usuario, nombre = @nombre, password = @password, tipo_usuclave = @tipo_usuclave, lactivo = @lactivo WHERE idusuario = @id";
+            string query = "UPDATE usuarios SET usuario = @usuario, nombre = @nombre, password = @password, idPerfil = @idPerfil, lactivo = @lactivo WHERE idusuario = @id";
 
             using (MySqlConnection conexion = new MySqlConnection(cnn))
             using (MySqlCommand command = new MySqlCommand(query, conexion))
@@ -140,7 +140,7 @@ namespace WindowsFormsApp1
                 command.Parameters.AddWithValue("@usuario", usuario);
                 command.Parameters.AddWithValue("@nombre", nombre);
                 command.Parameters.AddWithValue("@password", password);
-                command.Parameters.AddWithValue("@tipo_usuclave", tipo_usuclave);
+                command.Parameters.AddWithValue("@idPerfil", idPerfil);
                 command.Parameters.AddWithValue("@lactivo", lactivo);
                 command.Parameters.AddWithValue("@id", idUsuario);
 
@@ -191,7 +191,7 @@ namespace WindowsFormsApp1
 
         public string nombre { get; set; }
 
-        public int tipo_usuclave {  get; set; }
+        public int idPerfil {  get; set; }
 
         public int lactivo {  get; set; }
     }
